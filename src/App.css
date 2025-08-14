@@ -1,1 +1,204 @@
 @import "tailwindcss";
+/* กล่องหลัก */
+.survey-container {
+  @apply p-6 max-w-lg mx-auto bg-white shadow-md rounded;
+}
+
+/* หัวข้อใหญ่ */
+.survey-title {
+  @apply text-2xl font-bold mb-4;
+}
+
+/* label */
+.survey-label {
+  @apply block font-medium mb-1;
+}
+
+/* input, textarea */
+.survey-input {
+  @apply border p-2 rounded w-full border-gray-300;
+}
+
+.survey-input-error {
+  @apply border p-2 rounded w-full border-red-500;
+}
+
+/* ข้อความ error */
+.error-text {
+  @apply text-red-500 text-sm;
+}
+
+/* ปุ่ม */
+.btn {
+  @apply px-4 py-2 rounded text-white;
+}
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-600;
+}
+
+.btn-secondary {
+  @apply bg-gray-500 hover:bg-gray-600;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.text-red-500 {
+  color: #dc3545;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.input-error {
+  border-color: #dc3545;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.movie-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.movie-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.movie-option:hover {
+  border-color: #007BFF;
+  background-color: #f8f9ff;
+}
+
+.radio-input {
+  margin: 0;
+  margin-top: 0.25rem;
+}
+
+.movie-info {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.btn-primary {
+  background: #007BFF;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #545b62;
+  transform: translateY(-1px);
+}
+
+/* Summary page styles */
+.summary-content {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.summary-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.comment-text {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 4px;
+  border-left: 4px solid #007BFF;
+  font-style: italic;
+}
